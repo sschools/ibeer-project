@@ -31,15 +31,19 @@ img{
     width: 1000px;
     margin: auto;
     /*
-        TODO:
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
     */
 }
+
+.middle-section {
+    display: flex;
+    margin: -70px auto 0;
+    width: 80%;
+}
 #site-header{
     /*
-        TODO
         - Flexbox property here
     */
 }
@@ -47,13 +51,11 @@ img{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
+    background-image: url(file:///Users/stephenschools/Documents/Projects/ibeer-project/img/header-img.jpg);
     /*
-        TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
     */
-
     background-size: cover;
     background-position: right bottom;
 }
@@ -70,16 +72,17 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: 'Dancing Script', sans-serif;
     /*
-        TODO:
         - Use the script font: 'Dancing Script' fot this text
     */
 }
 #main-navigation{
     background: #444;
-
+    display: flex;
+    padding:0;
+    justify-content: space-between;
     /*
-        TODO:
         - Use Flexbox to arrange the navigation links
     */
 }
@@ -89,17 +92,15 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-
+    margin: 0 10px;
     /*
-        TODO:
         - Flexbox - Create general spacing between nav links
     */
 }
 #main-navigation #logo{
     margin-right: 400px;
-
+    margin-left: 50px;
     /*
-        TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
@@ -108,8 +109,10 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    display: flex;
+    width: 80%;
+    flex-direction: column;
     /*
-        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -118,8 +121,8 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 20%;
     /*
-        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -158,6 +161,8 @@ article time{
     color: #666;
 }
 article img{
+    float:right;
+    width: 50%;
     /*
         TODO:
         - Float article images to the right
@@ -165,6 +170,8 @@ article img{
     */
 }
 article footer p{
+    border-top: 1px solid #ccc;
+    text-align: center;
     /*
         TODO:
         - Style the article footer
