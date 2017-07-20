@@ -39,9 +39,10 @@ img{
 
 .middle-section {
     display: flex;
-    margin: -70px auto 0;
-    width: 80%;
+    margin: -70px auto 70px;
+    width: 86%;
 }
+
 #site-header{
     /*
         - Flexbox property here
@@ -110,18 +111,19 @@ main{
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     display: flex;
-    width: 80%;
+    width: 75%;
     flex-direction: column;
     /*
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
 }
+
 aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 20%;
+    width: 25%;
     /*
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
@@ -164,7 +166,6 @@ article img{
     float:right;
     width: 50%;
     /*
-        TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
@@ -172,17 +173,23 @@ article img{
 article footer p{
     border-top: 1px solid #ccc;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-top: 20px;
     /*
-        TODO:
         - Style the article footer
         HINT: Look to the article header;
     */
 }
 #site-footer{
-
+    height: 80px;
     background: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*
-        TODO:
         - Style the site footer
     */
 }
